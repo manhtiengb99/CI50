@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+#trafficlights {
+  border: 5px solid black;
+  padding: 0px 3px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#green,
+#yellow,
+#red {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  margin-top: 5px;
+}
+#green {
+  background-color: green;
+}
+#yellow {
+  background-color: yellow;
+}
+#red {
+  background-color: red;
+}
+#time {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+#times {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #b5b5b5;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oop {
+  padding: 10px 50px;
+  font-size: 16px;
+}
+.bai3 {
+  padding: 0px 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
