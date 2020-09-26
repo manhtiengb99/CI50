@@ -1,28 +1,33 @@
-import createTest from "./create_test.js";
-import questionInTest from "./questionIntest.js";
-let arrTest = [];
-let arrQuestion = [];
-let test = new createTest(arrTest);
-let question = new questionInTest(arrQuestion);
+import { AddNewTest } from "./test.js";
+import { AddNewQuest } from "./question.js";
+let arr1 = [];
+let arr2 = [];
+let actionTest = new AddNewTest(arr1);
+let actionQuest = new AddNewQuest(arr2);
+
 while (true) {
-  let input = prompt(`
-        Nhập yêu cầu của bạn:
-        Thêm câu hỏi - 1
-        Sửa câu hỏi - 2
-        In ra các câu hỏi - 3
-        Xóa câu hỏi - 4
-        Thêm Test - 5
-        In ra các test - 6
-        Thoát - E
-    `);
-  if (input == "1") question.addQuestions();
-  else if (input == "2") question.editQuestion();
-  else if (input == "3") question.showQuestion();
-  else if (input == "4") question.deleteQuestion();
-  else if (input == "5") test.create();
-  else if (input == "6") test.showTest();
-  else if (input == "E") break;
+  let request = prompt(`Nhập yêu cầu của bạn:
+        (1- Thêm bài kiểm tra
+         2- Hiển thị bài kiểm tra
+         3- Thêm câu hỏi
+         4- Xóa câu hỏi
+         5- Sửa câu hỏi
+         6- Hiện thị câu hỏi
+         E- Thoát)`);
+  if (request == "1") {
+    actionTest.addTest();
+  } else if (request == "2") {
+    actionTest.showTest();
+  } else if (request == "3") {
+    actionQuest.addQuest();
+  } else if (request == "4") {
+    actionQuest.deleteQ();
+  } else if (request == "5") {
+    actionQuest.editQ();
+  } else if (request == "6") {
+    actionQuest.showQuest();
+  } else if (request == "E") break;
   else {
-    alert("Bạn đã nhập sai");
+    alert("Bạn nhập sai cú pháp");
   }
 }
