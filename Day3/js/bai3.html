@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const convertTime = function (time12) {
+        const [time, modifier] = time12.split(" ");
+        let [hours, minutes] = time.split(":");
+        if (hours === "12") {
+          hours = "00";
+        }
+        if (modifier === "PM") {
+          hours = parseInt(hours, 10) + 12;
+        }
+        return `${hours}:${minutes}`;
+      };
+      console.log(convertTime("07:30 PM"));
+    </script>
+  </body>
+</html>
