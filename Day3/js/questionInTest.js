@@ -9,7 +9,7 @@ class questionIntest {
       console.log(this.questions[i]);
     }
   }
-  addQuestions() {
+  addQuestion() {
     let id = prompt("id = ?");
     let content = prompt("Nội dung câu hỏi: ");
     let correctAnswer = prompt("Câu trả lời đúng: ");
