@@ -1,11 +1,9 @@
 import createTest from "./create_test.js";
-import questionInTest from "./questionInTest.js";
-
+import questionInTest from "./questionIntest.js";
 let arrTest = [];
 let arrQuestion = [];
 let test = new createTest(arrTest);
 let question = new questionInTest(arrQuestion);
-
 while (true) {
   let input = prompt(`
         Nhập yêu cầu của bạn:

@@ -1,5 +1,5 @@
 import question from "./question.js";
-class questionInTest {
+class questionIntest {
   questions = [];
   constructor(questions) {
     this.questions = questions;
@@ -16,18 +16,18 @@ class questionInTest {
     let newQuest = new question(id, content, correctAnswer);
     this.questions.push(newQuest);
   }
-  editQuestions() {
-    let inputId = prompt("Nhập id câu hỏi muốn sửa");
+  editQuestion() {
+    let inputId = prompt("Nhập id câu hỏi muốn sửa:");
     let inputContent = prompt(
       "Nhập thuộc tính cần sửa(content, correctAnswer)"
     );
-    let inputEdit = prompt("Nhập nội dung cần sửa");
+    let inputEdit = prompt("Nhập nội dung cần sửa:");
     this.questions[inputId - 1][inputContent] = inputEdit;
   }
-  deleteQuestions() {
-    let inputId = prompt("Nhập id câu hỏi muốn xóa");
+  deleteQuestion() {
+    let inputId = prompt("Nhập id câu hỏi muốn xóa:");
     this.questions.splice(inputId - 1, 1);
   }
 }
 
-export default questionInTest;
+export default questionIntest;
