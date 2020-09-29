@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Async / Await là một tính năng của JavaScript giúp chúng ta làm việc với các hàm bất đồng bộ theo cách thú vị hơn và dễ hiểu hơn. Nó được xây dựng trên Promises và tương thích với tất cả các Promise dựa trên API. Trong đó:
+
+Async - khai báo một hàm bất đồng bộ (async function someName(){...}).
+Tự động biến đổi một hàm thông thường thành một Promise.
+Khi gọi tới hàm async nó sẽ xử lý mọi thứ và được trả về kết quả trong hàm của nó.
+Async cho phép sử dụng Await.
+
+Await - tạm dừng việc thực hiện các hàm async. (Var result = await someAsyncCall ()).
+Khi được đặt trước một Promise, nó sẽ đợi cho đến khi Promise kết thúc và trả về kết quả.
+Await chỉ làm việc với Promises, nó không hoạt động với callbacks.
+Await chỉ có thể được sử dụng bên trong các function async.
+
+Async / Await có thể sử dụng trong hầu hết các trình duyệt chính, ngoại trừ IE11 - tất cả các trình duyệt sẽ nhận ra mã async / await của bạn mà không cần các thư viện bên ngoài.
+Nếu các bạn dùng Node cũng có sử dụng async từ Node 8 trở lên. Nó sẽ trở thành LTS vào cuối năm nay.
+Nếu cái này không đáp ứng được nhu cầu của bạn, cũng có một số trình chuyển đổi JS như Babel và TypeScript và thư viện Node.js async/await cung cấp các phiên bản nền tảng riêng của tính năng này
+
+Ví dụ: 
+chúng ta muốn lấy một số tệp JSON từ máy chủ của mình. Chúng ta sẽ viết một hàm sử dụng thư viện axios và gửi yêu cầu HTTP GET đến Https://tutorialzine.com/misc/files/example.json . Chúng ta phải chờ đợi phản hồi từ máy chủ, đây là một yêu cầu HTTP không đồng bộ.
+async function getJSONAsync() {
+    let json = await axios.get('https://tutorialzine.com/misc/files/example.json');
+    return json;
+} -->
+  </body>
+</html>
