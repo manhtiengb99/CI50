@@ -6,9 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    <form-register></form-register>
+    <!-- <input-wrapper
+      label="bạn có người yêu chưa"
+      type="checkbox"
+      value="tien"
+    ></input-wrapper> -->
+    <form-register> </form-register>
   </body>
-  <template id="form-register">
+  <!-- <template id="form-register">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -77,18 +82,13 @@
               </div>
               <div class="form-group">
                 <label id="input-label">Email: </label>
-                <input type="text" class="form-control" value="" />
+                <input type="email" class="form-control" value="" />
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label id="input-label">Mật khẩu: </label>
-                <input
-                  type="password
-                  "
-                  class="form-control"
-                  value=""
-                />
+                <input type="password7" class="form-control" value="" />
               </div>
               <div class="form-group">
                 <label id="input-label">Xác thực mật khẩu: </label>
@@ -102,7 +102,48 @@
         </div>
       </div>
     </div>
-  </template>
+  </template> -->
 
+  <template id="template-input-wrapper">
+    <div class="input-wrapper">
+      <label for="" id="input-label"></label>
+      <input type="text" id="input-main" />
+      <div id="input-error"></div>
+    </div>
+  </template>
+  <template id="template-form-register">
+    <form class="form-register">
+      <h2>Registration</h2>
+      <input-wrapper
+        id="name"
+        label="User Name"
+        type="text"
+        error=""
+        placeholder="Enter user name"
+      ></input-wrapper>
+      <input-wrapper
+        id="email"
+        label="Email"
+        type="email"
+        error=""
+        placeholder="Enter your email"
+      ></input-wrapper>
+      <input-wrapper
+        id="password"
+        label="Password"
+        type="password"
+        error=""
+        placeholder="Enter your password"
+      ></input-wrapper>
+      <input-wrapper
+        id="password-confirmation"
+        label="Confirm Password"
+        type="password"
+        error=""
+        placeholder="Enter your password"
+      ></input-wrapper>
+      <button id="btn">Register</button>
+    </form>
+  </template>
   <script src="./app.js" type="module"></script>
 </html>
