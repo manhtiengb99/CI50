@@ -7,14 +7,14 @@ function arrsolve(arr1,arr2){
             }
         }
     }
-    let tmp = arr1.concat(arr2);
-    for(let i=0;i<res.length;i++){
-        let tmpp = res[i];
-        tmp.filter(function(res){
-            return res!=tmpp;
-        });
+    let a = arr1.concat(arr2);
+    var x = a.filter(word => word !=res[0]);
+    for(let i=1;i<res.length;i++){
+        let b = x;
+        b = x.filter(word => word != res[i]);
+        x = b;
     }
-    return tmp;
+    return x;
 }
 
-console.log(arrsolve( [1, 2, "a"] ,  [1, 3, "b"]));
+console.log(arrsolve( ["a","b",1,2,3,"c"] ,  ["b",1,3,"x"]));
